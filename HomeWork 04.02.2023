@@ -25,7 +25,7 @@ def write_to_file(FileN):
             for line in data:
                 line=[str(i) for i in line]
                 file.write(','.join(line)+'\n')
-    Open.close()
+    Open.close() #Закрыл файл, чтобы уменьшить нагрузку на пк. В будущем может пригодиться.
 
 def read_from_file(FileN):
     with open(FileN, 'r') as file:

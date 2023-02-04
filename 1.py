@@ -5,7 +5,7 @@ FileN = input(str("Путь до файла .csv: ")) #"C:\File\data.csv"
 
 def get_line():
     global s
-    s = list(input("Айди, Имя пользователя, Логин, Пароль, Статус аккаунта и цену в долларах: ").split())
+    s = list(input("Укажите Айди, Имя пользователя, Логин, Пароль, Статус аккаунта и цену в долларах: ").split())
     return (s[0], s[1], s[2], s[3], s[4], int(s[5]))
 
 def insert(line):
@@ -35,11 +35,6 @@ def read_from_file(FileN):
             data.append((line[0], line[1], line[2], line[3], line[4], int(line[5])))
     for i in columns:
         print(str(i).ljust(size), end=" ")    
-
-    for i in data:
-        print(str(i).ljust(size), end=" ")
-    print()
-
     for line in data:
         for i in line:
             print(str(i).ljust(size), end=' ')

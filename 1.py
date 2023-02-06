@@ -16,7 +16,7 @@ def insert(line):
 
 def write_to_file(FileN):
     with open(FileN, 'a') as file:
-        if "Nickname" in open(FileN).read():  
+        if "Id,Nickname,Login,Password,Status,Price in $" in open(FileN).read():
             for line in data:
                 line=[str(i) for i in line]
                 file.write(','.join(line)+'\n')
@@ -42,15 +42,9 @@ def read_from_file(FileN):
 
 
 
-
-
-
-
 size = 11
 columns = ("Id", "Nickname", "Login", "Password", "Status", "Price in $")
 data = []
-
-
 
 
 #write_to_file(FileN)

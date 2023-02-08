@@ -34,10 +34,10 @@ def read_from_file(FileN):
             line = line.split(',')
             data.append((line[0], line[1], line[2], line[3], line[4], int(line[5])))
     for i in columns:
-        print(str(i).ljust(size), end=" ")    
+        print(str(i).ljust(size), end="")
     for line in data:
         for i in line:
-            print(str(i).ljust(size), end=' ')
+            print(str(i).ljust(size), end='')
         print()
 
 
